@@ -13,7 +13,7 @@ public class Question29 {
 
 	public static void main(String[] args) {
 		List<String> s = Arrays.asList("123", "abc", "123abc", "45");
-		Pattern pattern = Pattern.compile("[0-9]");
+		//Pattern pattern = Pattern.compile("[0-9]");
 		s.stream().filter(s1->s1.matches("[0-9]+")).collect(Collectors.toList()).forEach(System.out::print);
 
 	}

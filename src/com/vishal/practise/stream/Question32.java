@@ -8,10 +8,11 @@ import java.util.Comparator;
 public class Question32 {
 
 	public static void main(String[] args) {
-		
+
 		String s = "Hello World";
-		
-		s.chars().mapToObj(c->(char)c).map(c->Character.toLowerCase(c)).sorted(Comparator.reverseOrder()).forEach(System.out::print);
+
+		s.chars().mapToObj(c -> (char) c).map(c -> Character.toLowerCase(c)).sorted(Comparator.reverseOrder())
+				.forEach(System.out::print);
 
 	}
 

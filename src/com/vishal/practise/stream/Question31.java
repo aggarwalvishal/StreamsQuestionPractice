@@ -11,14 +11,11 @@ public class Question31 {
 
 	public static void main(String[] args) {
 		
-		String s  = "HelloWorldHelloWOrlD";
-		
-		s.chars().mapToObj(c-> (char)c).filter(c-> Character.isUpperCase(c)).sorted(Comparator.reverseOrder()).forEach(System.out::print);
 		List<Integer> num = Arrays.asList(1,2,3,4,5);
 		
 		double avg = num.stream().mapToDouble(Integer::doubleValue).average().getAsDouble();
 		
-		//System.out.println(avg);
+		System.out.println(avg);
 		 
 
 	}

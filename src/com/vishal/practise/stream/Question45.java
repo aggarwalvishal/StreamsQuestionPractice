@@ -5,8 +5,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 45. Given a person list, fetch the list of names of a Person 1. Whose age is
- * greater than 30 2. name should be unique. 3. names should be in sorted order
+ * 45. Given a person list, fetch the list of names of a Person 
+ * 1. Whose age is greater than 30 
+ * 2. name should be unique. 
+ * 3. names should be in sorted order
  */
 public class Question45 {
 
@@ -18,7 +20,7 @@ public class Question45 {
 		List<String> greaterThan30 = personList.stream().filter(p -> p.getAge() > 30).map(Person45::getName).distinct()
 				.sorted().collect(Collectors.toList());
 
-		//System.out.println(greaterThan30);
+		System.out.println(greaterThan30);
 
 		// Good Practice
 
