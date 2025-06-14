@@ -15,7 +15,12 @@ public class Question8 {
 		Map<Character, Long> charOccurence = s.chars().mapToObj(c -> (char) c)
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		
+		Map<Character, Long> withoutSpace = s.chars().mapToObj(c->(char) c).filter(c->c!=' ')
+				.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		
 		System.out.println(charOccurence);
+		
+		System.out.println(withoutSpace);
 
 	}
 
